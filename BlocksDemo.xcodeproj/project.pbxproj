@@ -19,6 +19,11 @@
 		03AF280418E21FB700B1A5E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF27EC18E21FB600B1A5E7 /* UIKit.framework */; };
 		03AF280C18E21FB700B1A5E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03AF280A18E21FB700B1A5E7 /* InfoPlist.strings */; };
 		03AF280E18E21FB700B1A5E7 /* BlocksDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF280D18E21FB700B1A5E7 /* BlocksDemoTests.m */; };
+		03AF281918E2202100B1A5E7 /* NABlockyArrayIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF281818E2202100B1A5E7 /* NABlockyArrayIterator.m */; };
+		03AF281C18E2210400B1A5E7 /* NARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF281B18E2210400B1A5E7 /* NARootViewController.m */; };
+		03AF282418E226A900B1A5E7 /* NATemplateArrayIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF282318E226A900B1A5E7 /* NATemplateArrayIterator.m */; };
+		03AF282718E2277400B1A5E7 /* NASpeakersArrayIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF282618E2277400B1A5E7 /* NASpeakersArrayIterator.m */; };
+		03AF282A18E2280D00B1A5E7 /* NATopicsArrayIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF282918E2280D00B1A5E7 /* NATopicsArrayIterator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,17 @@
 		03AF280918E21FB700B1A5E7 /* BlocksDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlocksDemoTests-Info.plist"; sourceTree = "<group>"; };
 		03AF280B18E21FB700B1A5E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03AF280D18E21FB700B1A5E7 /* BlocksDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocksDemoTests.m; sourceTree = "<group>"; };
+		03AF281718E2202100B1A5E7 /* NABlockyArrayIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NABlockyArrayIterator.h; path = examples/NABlockyArrayIterator.h; sourceTree = "<group>"; };
+		03AF281818E2202100B1A5E7 /* NABlockyArrayIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NABlockyArrayIterator.m; path = examples/NABlockyArrayIterator.m; sourceTree = "<group>"; };
+		03AF281A18E2210400B1A5E7 /* NARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NARootViewController.h; path = "view controllers/NARootViewController.h"; sourceTree = "<group>"; };
+		03AF281B18E2210400B1A5E7 /* NARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NARootViewController.m; path = "view controllers/NARootViewController.m"; sourceTree = "<group>"; };
+		03AF282218E226A900B1A5E7 /* NATemplateArrayIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATemplateArrayIterator.h; path = template/basic/NATemplateArrayIterator.h; sourceTree = "<group>"; };
+		03AF282318E226A900B1A5E7 /* NATemplateArrayIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATemplateArrayIterator.m; path = template/basic/NATemplateArrayIterator.m; sourceTree = "<group>"; };
+		03AF282518E2277400B1A5E7 /* NASpeakersArrayIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NASpeakersArrayIterator.h; path = template/basic/NASpeakersArrayIterator.h; sourceTree = "<group>"; };
+		03AF282618E2277400B1A5E7 /* NASpeakersArrayIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NASpeakersArrayIterator.m; path = template/basic/NASpeakersArrayIterator.m; sourceTree = "<group>"; };
+		03AF282818E2280D00B1A5E7 /* NATopicsArrayIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATopicsArrayIterator.h; path = template/basic/NATopicsArrayIterator.h; sourceTree = "<group>"; };
+		03AF282918E2280D00B1A5E7 /* NATopicsArrayIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATopicsArrayIterator.m; path = template/basic/NATopicsArrayIterator.m; sourceTree = "<group>"; };
+		03AF282B18E229E800B1A5E7 /* NAArrayIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NAArrayIterator.h; path = template/NAArrayIterator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +123,13 @@
 		03AF27EE18E21FB600B1A5E7 /* BlocksDemo */ = {
 			isa = PBXGroup;
 			children = (
+				03AF281E18E2261D00B1A5E7 /* Template Implementation */,
 				03AF27F718E21FB700B1A5E7 /* NAAppDelegate.h */,
 				03AF27F818E21FB700B1A5E7 /* NAAppDelegate.m */,
 				03AF27FA18E21FB700B1A5E7 /* Images.xcassets */,
 				03AF27EF18E21FB600B1A5E7 /* Supporting Files */,
+				03AF281A18E2210400B1A5E7 /* NARootViewController.h */,
+				03AF281B18E2210400B1A5E7 /* NARootViewController.m */,
 			);
 			path = BlocksDemo;
 			sourceTree = "<group>";
@@ -142,6 +161,38 @@
 				03AF280A18E21FB700B1A5E7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03AF281E18E2261D00B1A5E7 /* Template Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				03AF282B18E229E800B1A5E7 /* NAArrayIterator.h */,
+				03AF282118E2263300B1A5E7 /* Blocky */,
+				03AF281F18E2262900B1A5E7 /* Basic */,
+			);
+			name = "Template Implementation";
+			sourceTree = "<group>";
+		};
+		03AF281F18E2262900B1A5E7 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				03AF282218E226A900B1A5E7 /* NATemplateArrayIterator.h */,
+				03AF282318E226A900B1A5E7 /* NATemplateArrayIterator.m */,
+				03AF282518E2277400B1A5E7 /* NASpeakersArrayIterator.h */,
+				03AF282618E2277400B1A5E7 /* NASpeakersArrayIterator.m */,
+				03AF282818E2280D00B1A5E7 /* NATopicsArrayIterator.h */,
+				03AF282918E2280D00B1A5E7 /* NATopicsArrayIterator.m */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		03AF282118E2263300B1A5E7 /* Blocky */ = {
+			isa = PBXGroup;
+			children = (
+				03AF281718E2202100B1A5E7 /* NABlockyArrayIterator.h */,
+				03AF281818E2202100B1A5E7 /* NABlockyArrayIterator.m */,
+			);
+			name = Blocky;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AF27F518E21FB700B1A5E7 /* main.m in Sources */,
+				03AF281918E2202100B1A5E7 /* NABlockyArrayIterator.m in Sources */,
 				03AF27F918E21FB700B1A5E7 /* NAAppDelegate.m in Sources */,
+				03AF282418E226A900B1A5E7 /* NATemplateArrayIterator.m in Sources */,
+				03AF282718E2277400B1A5E7 /* NASpeakersArrayIterator.m in Sources */,
+				03AF281C18E2210400B1A5E7 /* NARootViewController.m in Sources */,
+				03AF282A18E2280D00B1A5E7 /* NATopicsArrayIterator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
