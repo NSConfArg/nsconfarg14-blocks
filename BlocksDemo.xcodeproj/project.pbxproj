@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0397753E18EF5C0F00E64A1D /* NABlockyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397753D18EF5C0F00E64A1D /* NABlockyTableViewController.m */; };
+		0397754118EF5E6900E64A1D /* NAAtendeesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397754018EF5E6900E64A1D /* NAAtendeesStore.m */; };
+		0397754518EF666D00E64A1D /* NABlockMemoryManagementDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397754418EF666D00E64A1D /* NABlockMemoryManagementDemo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0397754918EFB45C00E64A1D /* NABlocksSyntaxDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0397754818EFB45C00E64A1D /* NABlocksSyntaxDemo.m */; };
 		03AF27E918E21FB600B1A5E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF27E818E21FB600B1A5E7 /* Foundation.framework */; };
 		03AF27EB18E21FB600B1A5E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF27EA18E21FB600B1A5E7 /* CoreGraphics.framework */; };
 		03AF27ED18E21FB600B1A5E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF27EC18E21FB600B1A5E7 /* UIKit.framework */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0397753C18EF5C0F00E64A1D /* NABlockyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NABlockyTableViewController.h; path = "table view controller/NABlockyTableViewController.h"; sourceTree = "<group>"; };
+		0397753D18EF5C0F00E64A1D /* NABlockyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NABlockyTableViewController.m; path = "table view controller/NABlockyTableViewController.m"; sourceTree = "<group>"; };
+		0397753F18EF5E6900E64A1D /* NAAtendeesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAAtendeesStore.h; path = "table view controller/NAAtendeesStore.h"; sourceTree = "<group>"; };
+		0397754018EF5E6900E64A1D /* NAAtendeesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAAtendeesStore.m; path = "table view controller/NAAtendeesStore.m"; sourceTree = "<group>"; };
+		0397754318EF666D00E64A1D /* NABlockMemoryManagementDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NABlockMemoryManagementDemo.h; path = "memory management/NABlockMemoryManagementDemo.h"; sourceTree = "<group>"; };
+		0397754418EF666D00E64A1D /* NABlockMemoryManagementDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NABlockMemoryManagementDemo.m; path = "memory management/NABlockMemoryManagementDemo.m"; sourceTree = "<group>"; };
+		0397754718EFB45C00E64A1D /* NABlocksSyntaxDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NABlocksSyntaxDemo.h; path = "blocks syntax/NABlocksSyntaxDemo.h"; sourceTree = "<group>"; };
+		0397754818EFB45C00E64A1D /* NABlocksSyntaxDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NABlocksSyntaxDemo.m; path = "blocks syntax/NABlocksSyntaxDemo.m"; sourceTree = "<group>"; };
 		03AF27E518E21FB600B1A5E7 /* BlocksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AF27E818E21FB600B1A5E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03AF27EA18E21FB600B1A5E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +102,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0397753B18EF5BB800E64A1D /* Table view controller example */ = {
+			isa = PBXGroup;
+			children = (
+				0397753C18EF5C0F00E64A1D /* NABlockyTableViewController.h */,
+				0397753D18EF5C0F00E64A1D /* NABlockyTableViewController.m */,
+				0397753F18EF5E6900E64A1D /* NAAtendeesStore.h */,
+				0397754018EF5E6900E64A1D /* NAAtendeesStore.m */,
+			);
+			name = "Table view controller example";
+			sourceTree = "<group>";
+		};
+		0397754218EF663F00E64A1D /* Block memory management */ = {
+			isa = PBXGroup;
+			children = (
+				0397754318EF666D00E64A1D /* NABlockMemoryManagementDemo.h */,
+				0397754418EF666D00E64A1D /* NABlockMemoryManagementDemo.m */,
+			);
+			name = "Block memory management";
+			sourceTree = "<group>";
+		};
+		0397754618EFB43700E64A1D /* Blocks syntax */ = {
+			isa = PBXGroup;
+			children = (
+				0397754718EFB45C00E64A1D /* NABlocksSyntaxDemo.h */,
+				0397754818EFB45C00E64A1D /* NABlocksSyntaxDemo.m */,
+			);
+			name = "Blocks syntax";
+			sourceTree = "<group>";
+		};
 		03AF27DC18E21FB600B1A5E7 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +164,9 @@
 		03AF27EE18E21FB600B1A5E7 /* BlocksDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0397754618EFB43700E64A1D /* Blocks syntax */,
+				0397754218EF663F00E64A1D /* Block memory management */,
+				0397753B18EF5BB800E64A1D /* Table view controller example */,
 				03AF281E18E2261D00B1A5E7 /* Template Implementation */,
 				03AF27F718E21FB700B1A5E7 /* NAAppDelegate.h */,
 				03AF27F818E21FB700B1A5E7 /* NAAppDelegate.m */,
@@ -291,8 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0397754918EFB45C00E64A1D /* NABlocksSyntaxDemo.m in Sources */,
 				03AF27F518E21FB700B1A5E7 /* main.m in Sources */,
+				0397754118EF5E6900E64A1D /* NAAtendeesStore.m in Sources */,
 				03AF281918E2202100B1A5E7 /* NABlockyArrayIterator.m in Sources */,
+				0397754518EF666D00E64A1D /* NABlockMemoryManagementDemo.m in Sources */,
+				0397753E18EF5C0F00E64A1D /* NABlockyTableViewController.m in Sources */,
 				03AF27F918E21FB700B1A5E7 /* NAAppDelegate.m in Sources */,
 				03AF282418E226A900B1A5E7 /* NATemplateArrayIterator.m in Sources */,
 				03AF282718E2277400B1A5E7 /* NASpeakersArrayIterator.m in Sources */,
@@ -494,6 +542,7 @@
 				03AF281318E21FB700B1A5E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03AF281418E21FB700B1A5E7 /* Build configuration list for PBXNativeTarget "BlocksDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +551,7 @@
 				03AF281618E21FB700B1A5E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

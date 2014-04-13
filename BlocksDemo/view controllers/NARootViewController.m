@@ -58,14 +58,19 @@
     [topicsArrayIterator runOnArray:self.topics];
     
     NABlockyArrayIterator *speakersBlockyArrayIterator = [[NABlockyArrayIterator alloc] init];
-
-    
     __weak NARootViewController* weakSelf = self;
     speakersBlockyArrayIterator.doEachBlock = ^(id o) {
         weakSelf.textView.text = [weakSelf.textView.text stringByAppendingFormat:@"%@\n", o];
     };
     
     [speakersBlockyArrayIterator runOnArray:self.speakers];
+    
+    speakersBlockyArrayIterator.doEachBlock = ^(id obj)
+    {
+        NSLog(@"%@", obj);
+    };
+    
+    [speakersBlockyArrayIterator runOnArray:self.topics];
     
 }
 
